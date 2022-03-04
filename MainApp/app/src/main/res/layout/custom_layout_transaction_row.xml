@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgTP"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        app:srcCompat="@drawable/ic_assignment_black_150dp" />
+
+    <TextView
+        android:id="@+id/txtTPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgTP"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/imgTP"
+        android:layout_toRightOf="@+id/imgTP"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Yogesh Bojja"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTPDOI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTPName"
+        android:layout_alignStart="@+id/txtTPName"
+        android:layout_below="@+id/txtTPName"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Date of Issue : 27/4/2018 at (6:03 am)"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTPDOR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTPDOI"
+        android:layout_alignStart="@+id/txtTPDOI"
+        android:layout_below="@+id/txtTPDOI"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Date of Return : 27/5/2018"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTPPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTPDOR"
+        android:layout_alignStart="@+id/txtTPDOR"
+        android:layout_below="@+id/txtTPDOR"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Plate Quantity : 50"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTPRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTPPlate"
+        android:layout_alignStart="@+id/txtTPPlate"
+        android:layout_below="@+id/txtTPPlate"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Price per Plate : 40"
+        android:textStyle="bold" />
+</RelativeLayout>

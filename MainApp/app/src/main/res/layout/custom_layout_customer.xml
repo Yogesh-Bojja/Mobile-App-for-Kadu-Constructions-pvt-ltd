@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgCustom"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/cust"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtNameCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgCustom"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/imgCustom"
+        android:layout_toRightOf="@+id/imgCustom"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtEmailCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNameCustom"
+        android:layout_alignStart="@+id/txtNameCustom"
+        android:layout_below="@+id/txtNameCustom"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPhoneCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEmailCustom"
+        android:layout_alignStart="@+id/txtEmailCustom"
+        android:layout_below="@+id/txtEmailCustom"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtAddressCustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPhoneCustom"
+        android:layout_alignStart="@+id/txtPhoneCustom"
+        android:layout_below="@+id/txtPhoneCustom"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold" />
+
+</RelativeLayout>
